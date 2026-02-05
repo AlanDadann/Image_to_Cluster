@@ -1,4 +1,3 @@
-```markdown
 # 🚀 De Packer à K3d via Ansible
 
 Ce projet automatise la création d'une image Docker personnalisée et son déploiement sur un cluster Kubernetes (K3d) en utilisant l'approche **Infrastructure as Code**.
