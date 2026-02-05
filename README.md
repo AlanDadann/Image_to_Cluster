@@ -78,7 +78,7 @@ ansible-playbook deploy.yml -e "ansible_python_interpreter=$(which python3)"
 
 ## 🌐 Accéder à l'application
 
-Une fois déployé, suivez ces étapes pour voir le résultat :
+Une fois déployé, vous pouvez utiliser ces commandes :
 
 1. **Vérifier que le pod tourne :**
 ```bash
@@ -88,14 +88,14 @@ kubectl get pods -n demo-ansible
 
 
 2. **Accéder depuis le navigateur (Port-Forward) :**
-Lancez cette commande pour lier le port 80 du service au port 8081 de votre Codespace :
+Lancez cette commande pour lier le port 80 du service a un port disponible :
 ```bash
-kubectl port-forward svc/nginx-custom-service 8081:80 -n demo-ansible
+make forward
 
 ```
 
 
-3. Allez dans l'onglet **PORTS** de Codespaces, passez le port **8081** en visibilité "Public" (si nécessaire) et ouvrez l'adresse dans votre navigateur.
+
 
 ---
 
