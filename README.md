@@ -47,12 +47,19 @@ Si vous souhaitez exécuter ou comprendre chaque étape individuellement, voici 
 
 ### Etape 0 : Préparation de l'environnement
 
-# 1. Installation des outils (Packer, Ansible, K3d, lsof)
-make install
+1. Installation des outils (Packer, Ansible, K3d, lsof)
 
-# 2. Création du cluster K3d (nommé 'lab')
-# Cette commande expose le port 80 du cluster sur le port 8080 de votre machine
+```bash
+make install
+```
+
+2. Création du cluster K3d (nommé 'lab')
+ 
+Cette commande expose le port 80 du cluster sur le port 8080 de votre machine
+
+```bash
 k3d cluster create lab --servers 1 --agents 2 --port 8080:80@loadbalancer
+```
 
 ### Étape 1 : Construction de l'image (Packer)
 
