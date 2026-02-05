@@ -122,8 +122,8 @@ make forward
 * `index.html` : La page web personnalisée.
 * `Makefile` : Script d'automatisation.
 
-
-#Architecture du projet
+---
+#Architecture du projet 👷🏾‍♂️
 
 ![Schéma représentatif de l'architecture du projet](Architecture_cible.png)
 
