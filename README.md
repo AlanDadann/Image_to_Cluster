@@ -123,7 +123,7 @@ make forward
 * `Makefile` : Script d'automatisation.
 
 ---
-#Architecture du projet 👷🏾‍♂️
+# Architecture du projet 👷🏾‍♂️
 
 ![Schéma représentatif de l'architecture du projet](Architecture_cible.png)
 
