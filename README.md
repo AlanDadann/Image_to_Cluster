@@ -45,6 +45,15 @@ make check
 
 Si vous souhaitez exécuter ou comprendre chaque étape individuellement, voici les commandes utilisées par le Makefile.
 
+### Etape 0 : Préparation de l'environnement
+
+# 1. Installation des outils (Packer, Ansible, K3d, lsof)
+make install
+
+# 2. Création du cluster K3d (nommé 'lab')
+# Cette commande expose le port 80 du cluster sur le port 8080 de votre machine
+k3d cluster create lab --servers 1 --agents 2 --port 8080:80@loadbalancer
+
 ### Étape 1 : Construction de l'image (Packer)
 
 Nous utilisons Packer pour créer une image Docker nommée `nginx-custom:latest` qui embarque le fichier `index.html`.
