@@ -13,14 +13,7 @@ Ce projet automatise la création d'une image Docker personnalisée et son dépl
 
 Un **Makefile** est inclus pour automatiser toutes les tâches.
 
-### 1. Installation des prérequis
-Si vous démarrez un nouveau Codespace, installez les outils nécessaires (Packer, Ansible, dépendances Python) :
-```bash
-make install
-
-```
-
-### 2. Lancer le pipeline complet
+### 1. Je suis un flemmard et je veux juste une commande à faire
 
 Cette commande va construire l'image, l'importer dans le cluster et déployer l'application :
 
@@ -113,6 +106,4 @@ kubectl port-forward svc/nginx-custom-service 8081:80 -n demo-ansible
 * `index.html` : La page web personnalisée.
 * `Makefile` : Script d'automatisation.
 
-```
 
-```
